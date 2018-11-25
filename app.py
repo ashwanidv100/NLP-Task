@@ -1,14 +1,12 @@
 import os
-from bottle import route, run
+import logging
+import redis
+import gevent
+from flask import Flask, render_template
+from flask_sockets import Sockets
 
-@route('/hello/:name')
-def index(name='World'):
-    return '<b>Hello %s!</b>' % name
+app = Flask(__name__)
 
-
-if __name__ == '__main__':
-    # Get required port, default to 5000.
-    port = os.environ.get('PORT', 5000)
-
-    # Run the app.
-    run(host='0.0.0.0', port=port)
+@app.route('/')
+def hello():
+    return render_template('index.html')
