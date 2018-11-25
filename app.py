@@ -1,9 +1,14 @@
-from flask import Flask
-app = Flask(__name__)
+import os
+from bottle import route, run
 
-@app.route('/')
-def hello_world():
-    return 'Hello World!'
+@route('/hello/:name')
+def index(name='World'):
+    return '<b>Hello %s!</b>' % name
+
 
 if __name__ == '__main__':
-    app.run()
+    # Get required port, default to 5000.
+    port = os.environ.get('PORT', 5000)
+
+    # Run the app.
+    run(host='0.0.0.0', port=port)
