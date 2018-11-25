@@ -1,6 +1,5 @@
 """
 Class definition for text web form
-
 @author: Ashwani Kumar
 """
 from flask_wtf import FlaskForm
