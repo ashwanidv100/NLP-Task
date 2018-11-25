@@ -1,1 +1,16 @@
+{% extends "base.html" %}
 
+{% block content %}
+
+<h1>Natural Language Processing Analysis </h1>
+<p style = "margin-bottom:100px">
+  Advanced Natural Language Processor<br /><br />
+  This is a suite of one-task tools working with text data.<br /> </p>
+  
+  <form method="post" name="processText">;
+  Enter your text:
+  {{ form.inputText(size=200, placeholder="text ...") }}
+  <button type="submit" value="TA">Basic Analysis</button>
+  </form>
+
+{% endblock %}
