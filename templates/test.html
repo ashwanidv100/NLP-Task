@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<h1>Hello, Welocome to NLP!</h1>
+  <p>NLP is your advanced Natural Language Processor</p>
+  <p>
+"This is a suite of one-task tools working with text data."
+  </p>
+  <form>
+  Input Text:<br>
+  <input type="text" name="inputText"> {{processtext}}
+  <button type="submit" value="TA">Text Analysis</button>
+  </form>
+
+
+{% endblock %}
