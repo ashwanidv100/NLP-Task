@@ -1,17 +1,16 @@
-{% extends "layout.html" %}
+{% extends "results.html" %}
 {% block body %}
-
 
 <h1>Hello, Welocome to NLP!</h1>
   <p>NLP is your advanced Natural Language Processor</p>
   <p>
 "This is a suite of one-task tools working with text data."
   </p>
-  <form>
+  <form Id = 'input' method= 'POST' >
   Input Text:<br>
-  <input type="text" name="inputText"> {{processtext}}
-  <button type="submit" value="TA">Text Analysis</button>
+  <input type="text" name="inputText" value={{request.form.inputText}}>
+  <button type="submit" name = "form"value="Submit">Result</button>
   </form>
-
-
+  
+  <p> NLP Result: {{output}} </p>
 {% endblock %}
