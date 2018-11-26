@@ -3,7 +3,7 @@
 - NLP is a set of tools for Natural Language Processing
 
 ## The NLP to do the following :
-- [x] Perform basic sentiment analysis (shows if the text content is positive, neutral, negative) 
+- [x] Perform basic sentiment analysis (shows if the text content is positive, neutral, negative & compound) 
 - [x] Host the project on Heroku.
 
 ## Prerequisites
@@ -18,7 +18,7 @@
 ###### Install dependencies
 ###### Please refer to Python and Flask documentation
 
-# ScreenShots
+## ScreenShots
 - Input Text : Happy (Positive: 1)
 
 ![User-entered text](/Screenshots/pic.PNG)
