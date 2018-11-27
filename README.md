@@ -15,6 +15,9 @@
     ## Clone this repository
     $ git clone https://github.com/ashwanidv100/NLP-Task.git
 
+- Live Action on Web Page
+  - URL: https://nlp-task.herokuapp.com/
+
 ###### Install dependencies
 ###### Please refer to Python and Flask documentation
 
