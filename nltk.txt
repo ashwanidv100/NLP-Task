@@ -1,0 +1,6 @@
+wordnet
+pros_cons
+reuters
+vader
+sentiment
+SentimentIntensityAnalyzer
