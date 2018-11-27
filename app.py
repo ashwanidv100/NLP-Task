@@ -1,6 +1,6 @@
 from flask import Flask, flash, redirect, render_template, request
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
-
+import os
  
 app = Flask(__name__)
 
@@ -20,4 +20,5 @@ def result():
     return render_template('test.html',output= output)
 
 if __name__ == "__main__":
-    app.run()
+    myport = int(os.environ.get("PORT", 5000))
+    app.run(port= myport)
