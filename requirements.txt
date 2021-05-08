@@ -2,7 +2,7 @@ beautifulsoup4==4.6.3
 click==6.7
 cltk==0.1.83
 Flask==0.12
-Flask-Cors==3.0.2
+Flask-Cors==3.0.9
 Flask-WTF==0.14.2
 gunicorn==19.9.0
 itsdangerous==0.24
