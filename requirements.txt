@@ -6,7 +6,7 @@ Flask-Cors==3.0.9
 Flask-WTF==0.14.2
 gunicorn==19.9.0
 itsdangerous==0.24
-lxml==3.7.2
+lxml==4.6.5
 nltk==3.2.2
 regex==2018.2.21
 request==1.0.2
