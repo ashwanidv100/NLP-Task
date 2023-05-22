@@ -10,7 +10,7 @@ lxml==4.6.5
 nltk==3.6.6
 regex==2018.2.21
 request==1.0.2
-requests==2.12.4
+requests==2.31.0
 rope-py3k==0.9.4.post1
 selenium==3.14.1
 twython==3.7.0
